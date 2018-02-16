@@ -1,0 +1,24 @@
+.container {
+    margin: 0 auto;
+    @include media("<=small") {
+        max-width: $container-width-s;
+    }
+    @include media(">small") {
+        max-width: $container-width;
+    }
+}
+
+// Basic grid
+// The repo uses flex so be flexible! 
+.box {
+    @include media("<=small") {
+        display: block;
+    }
+    @include media(">small") {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .item {
+        padding: 0 $gutter;
+    }
+}

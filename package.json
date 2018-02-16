@@ -1,0 +1,31 @@
+{
+  "name": "sysforall-boilerplate-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "npm run lint && webpack --config webpack.config.js -p",
+    "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
+    "lint": "./node_modules/.bin/eslint js"
+  },
+  "author": "Fransy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.19.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^0.10.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
+    "retinajs": "^2.1.3"
+  }
+}

@@ -1,0 +1,48 @@
+// Block buttons 
+.btn {
+	display: block;
+	font-weight: $btn-font-weight;
+	text-align: center;
+	touch-action: manipulation;
+	cursor: pointer;
+	border: none;
+	white-space: nowrap;
+	background-color: $theme-colour;
+	border-radius: $btn-border-radious;
+	padding: 1em;
+	width: $btn-width;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.45em;
+	span {
+		color: $btn-color;
+		position: relative;
+		z-index: 1;
+		font-size: $btn-font-size;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		border-radius: $btn-border-radious;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: darken($theme-colour, 1%);
+		transform: translateX(-100%);
+		transition: 0.5s ease-in-out;
+	}
+	&:hover {
+		&:after {
+			transform: translateX(0);
+		}
+	}
+}
+
+// Link buttons
+.link {
+	display: block;
+	text-decoration: none;
+	color: $text-colour;
+	margin: $gutter 0;
+}

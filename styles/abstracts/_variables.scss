@@ -1,0 +1,58 @@
+// Colours
+$theme-colour:  rgb(136,176,75);
+$black:         rgb(0,0,0);
+$white:         rgb(255,255,255);
+$gray:          rgb(128,128,128);
+$silver:        rgb(192,192,192);
+$transparent:   rgba(255, 255, 255, 0);
+$text-colour:   rgb(88, 87, 92);
+
+$primary-colour: $theme-colour;
+$secondary-colour: $white;
+
+// Typography
+$font-family: 'Roboto', sans-serif;
+
+$font-size-base:  1.6rem;
+
+// Add any font sizes the site used
+
+$font-size-large:  2rem;   // ~20px
+$font-size-small:  1.2rem; // ~12px
+
+$font-size-menu: $font-size-base;
+$font-size-menu-s: $font-size-base * 0.80;
+
+// Typography
+$line-height-base: 1.2em;
+
+// Layout
+$container-width: 128.0rem; // ~1280px
+$container-width-s: 600rem;
+$section-vertical-space: 4rem;
+$gutter: 2rem;
+$gutter-s: 1rem;
+$border-radious: 20px;
+
+
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px,
+);
+
+// Logo (desktop) sizes
+$logo-size-vertical: 30rem;
+$logo-size-horizontal: 100rem;
+
+
+// Buttons
+$btn-border-radious: $border-radious; 
+$btn-font-weight: 400;
+$btn-font-size: $font-size-base;
+$btn-width: 20rem;
+$btn-color: $white;
+// Forms
+
+// Footer
+$footer-font-colour: $silver;

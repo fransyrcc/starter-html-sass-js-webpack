@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-family;
+    color: $text-colour;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-size: $font-size-base;
+}
+
+p {
+    line-height: $line-height-base;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $text-colour;
+    text-decoration: none;
+}
+
+.hr {
+    border-bottom: 1px solid $silver;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.social-icon {
+    font-size: 0px;
+    color: $transparent;
+}
+
+@include media("<=small") {
+    .section {
+        padding: ($gutter) 0;
+    }
+}
+
+@include media(">small") {
+    .section {
+        padding: ($gutter * 4) 0;
+    }
+}
