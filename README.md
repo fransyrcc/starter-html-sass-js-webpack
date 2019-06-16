@@ -10,8 +10,8 @@ Keep it simple and straightforward but good enough so it can become a large site
 
 ### Development
 
-- Run `npm run dev`
-- In your browser, navigate to: [http://localhost:8080/](http://localhost:8080/)
+- Run `npm run watch`
+- In your browser, navigate to: [http://localhost:3000/](http://localhost:3000/)
 
 ### Resources
 
@@ -20,15 +20,8 @@ Keep it simple and straightforward but good enough so it can become a large site
 
 ### Publish
 
-1. In `webpack.config.js` file, replace `www.example.com` with the real domain name.
+> Run `npm run build`
 
-2. Run `npm run build`
-
-3. Copy the following folders/files to web server
-
-	- /dist
-	- /images
-	- index.html
 
 ## Discussions
 
